@@ -21,8 +21,8 @@
 
 @media (min-width: 500px) {
   .NavigationItem {
-      margin: 0;
-      display: flex;
+      margin: -10px 10px 10px 10px;
+      display: inline-flex;
       height: 100%;
       width: auto;
       align-items: center;
