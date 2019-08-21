@@ -66,7 +66,7 @@ class BurgerBuilder extends Component {
 
   }
 
-  removeInfredientHandler = (type) => {
+  removeIngredientHandler = (type) => {
     const oldCount = this.state.ingredients[type]
     if (oldCount <= 0) {
       return;
@@ -122,7 +122,7 @@ class BurgerBuilder extends Component {
           <Burger ingredients={this.state.ingredients} />
           <BuildControls
             ingredientAdded={this.addIngredientHandler}
-            ingredientRemoved={this.removeInfredientHandler}
+            ingredientRemoved={this.removeIngredientHandler}
             disabled={disabledInfo}
             purchaseable={this.state.purchaseable}
             ordered={this.purchaseHandler}
