@@ -26,10 +26,11 @@ class BurgerBuilder extends Component {
   // }
 
   componentDidMount() {
-    // fetch('https://evan-react-burger.firebaseio.com/ingredients.json')
-    //   .then(res => res.json())
-    //   .then(ingredients => this.setState({ ingredients: ingredients }))
-    //   .catch(error => { this.setState({ error: true }) })
+    console.log(this.props)
+    fetch('https://evan-react-burger.firebaseio.com/ingredients.json')
+      .then(res => res.json())
+      .then(ingredients => this.setState({ ingredients: ingredients }))
+      .catch(error => { this.setState({ error: true }) })
 
   }
 
